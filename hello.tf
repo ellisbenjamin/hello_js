@@ -10,6 +10,6 @@ terraform {
 
 
 resource "cloudflare_worker_script" "this" {
-  content = "hello.js"
+  content = "${file("hello.js")}"
 }
 
